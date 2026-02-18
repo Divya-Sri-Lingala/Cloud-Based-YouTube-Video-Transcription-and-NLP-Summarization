@@ -1,75 +1,59 @@
-#Cloud-Based-YouTube-Video-Transcription-and-NLP-Summarization
+# Cloud-Based YouTube Video Transcription and NLP Summarization
 
-##Overview
+## Overview
 
-Cloud-Based-YouTube-Video-Transcription-and-NLP-Summarization is an end-to-end web application developed to automate the process of extracting audio from YouTube videos, transcribing speech using Google Cloud Speech-to-Text API, and generating concise summaries using Natural Language Processing techniques.
+Cloud-Based YouTube Video Transcription and NLP Summarization is an end-to-end web application developed to automate the process of extracting audio from YouTube videos, transcribing speech using Google Cloud Speech-to-Text API, and generating concise summaries using Natural Language Processing techniques.
 
 The project demonstrates practical implementation of cloud computing, speech recognition, and NLP within a scalable web-based architecture. It integrates multiple technologies to provide an efficient solution for automated video content analysis.
 
-Objective
+## Objective
 
 The objective of this project is to design and implement a cloud-enabled system capable of accurately transcribing spoken video content and generating meaningful summaries, enabling faster information extraction and improved accessibility.
 
-Key Features
+## Key Features
 
-Extraction of audio from YouTube videos using yt-dlp
+- Extraction of audio from YouTube videos using yt-dlp  
+- Upload of audio files to Google Cloud Storage  
+- Speech transcription using Google Cloud Speech-to-Text API  
+- Extractive text summarization using spaCy  
+- Web-based interface developed with Flask  
+- Fully automated end-to-end processing workflow  
 
-Upload of audio files to Google Cloud Storage
+## System Workflow
 
-Speech transcription using Google Cloud Speech-to-Text API
+1. The user provides a YouTube video URL through the web interface.  
+2. The application downloads and extracts the audio from the video.  
+3. The audio file is uploaded to Google Cloud Storage.  
+4. Google Cloud Speech-to-Text processes the audio and generates a transcription.  
+5. The transcription is analyzed using NLP techniques to produce a summary.  
+6. The transcription and summary are displayed to the user.  
 
-Extractive text summarization using spaCy
+## Technologies Used
 
-Web-based interface developed with Flask
+- Python  
+- Flask  
+- Google Cloud Speech-to-Text API  
+- Google Cloud Storage  
+- spaCy  
+- yt-dlp  
+- HTML  
+- CSS  
 
-Fully automated end-to-end processing workflow
+## Installation and Setup
 
-System Workflow
-
-The user provides a YouTube video URL through the web interface.
-
-The application downloads and extracts the audio from the video.
-
-The audio file is uploaded to Google Cloud Storage.
-
-Google Cloud Speech-to-Text processes the audio and generates a transcription.
-
-The transcription is analyzed using NLP techniques to produce a summary.
-
-The transcription and summary are displayed to the user.
-
-Technologies Used
-
-Python
-
-Flask
-
-Google Cloud Speech-to-Text API
-
-Google Cloud Storage
-
-spaCy
-
-yt-dlp
-
-HTML and CSS
-
-Installation and Setup
-Clone the Repository
+### Clone the Repository
 
 git clone https://github.com/Divya-Sri-Lingala/Cloud-Based-YouTube-Video-Transcription-and-NLP-Summarization.git
 
 cd Cloud-Based-YouTube-Video-Transcription-and-NLP-Summarization
 
-Configure Google Cloud
 
-Create a Google Cloud account.
+### Configure Google Cloud
 
-Enable the Speech-to-Text API.
-
-Download the service account credentials JSON file.
-
-Set the environment variable:
+1. Create a Google Cloud account.  
+2. Enable the Speech-to-Text API.  
+3. Download the service account credentials JSON file.  
+4. Set the environment variable:
 
 On macOS or Linux:
 
@@ -79,7 +63,8 @@ On Windows:
 
 set GOOGLE_APPLICATION_CREDENTIALS=path_to_your_credentials_file.json
 
-Install Dependencies
+
+### Install Dependencies
 
 python -m venv venv
 source venv/bin/activate
@@ -89,35 +74,31 @@ On Windows:
 
 venv\Scripts\activate
 
-Run the Application
 
-python app.py
+### Run the Application
 
 Access the application at:
 
 http://127.0.0.1:5000/
 
-Project Structure
+## Project Structure
 
-app.py – Main Flask application
-processing.py – Core logic for downloading, transcribing, and summarizing
-templates/index.html – Homepage template
-templates/result.html – Results page template
-static/style.css – Styling file
-requirements.txt – Project dependencies
-README.md – Documentation
-LICENSE – License information
+- app.py – Main Flask application  
+- processing.py – Core logic for downloading, transcribing, and summarizing  
+- templates/index.html – Homepage template  
+- templates/result.html – Results page template  
+- static/style.css – Styling file  
+- requirements.txt – Project dependencies  
+- README.md – Documentation  
+- LICENSE – License information  
 
-Future Enhancements
+## Future Enhancements
 
-Deployment on cloud platforms such as AWS or GCP
+- Deployment on cloud platforms such as AWS or GCP  
+- Support for multilingual transcription  
+- Integration of transformer-based summarization models  
+- User authentication and transcript storage  
 
-Support for multilingual transcription
-
-Integration of transformer-based summarization models
-
-User authentication and transcript storage
-
-License
+## License
 
 This project is licensed under the MIT License.
